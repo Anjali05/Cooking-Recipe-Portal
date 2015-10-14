@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/Search.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/Style.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <button type="button" runat="server" class="navbar-toggle" data-toogle="collapse" data-target=".nav-colla">
+            <span runat="server" class="icon-bar"></span>
+            <span runat="server" class="icon-bar"></span>
+            <span runat="server" class="icon-bar"></span>
+            </button> 
+            <a class="navbar-brand" href="#">recipe.com</a>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="Homepage.aspx">Home</a></li>
+                    <li class="About"><a href="Aboutus.aspx">About Us</a></li>
+                     <li class="login"><a href="Login.aspx">Log In</a></li>
+                    <li class="Signup"><a href="Signup.aspx">Sign Up</a></li>
+                </ul>
+            </div><!--nav-collapse -->
+        </div>
+    </div>
+    <div class="container">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="footer">
+        <i> Copyright@Anjali</i>
+    </div>
+    
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+</body>
+</html>
