@@ -15,14 +15,18 @@
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         border-radius: 3px;
-    }
+    top: 6px;
+    left: 24px;
+}
  
     #custom-search-input button {
-        border: 0;
-        background: none;
         /** belows styles are working good */
-        padding: 2px 5px;
-        margin-top: 2px;
+        border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    background: ;
+    padding: 2px 5px;
+    margin-top: 2px;
         position: relative;
         left: -28px;
         /* IE7-8 doesn't have border-radius, so don't indent the padding */
@@ -31,7 +35,9 @@
         -moz-border-radius: 3px;
         border-radius: 3px;
         color:#D9230F;
-    }
+    top: 0px;
+    width: 27px;
+}
  
     .search-query:focus + button {
         z-index: 3;   
