@@ -5,6 +5,10 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+/*
+* @author Anjali
+*/
+
 public partial class LoginRedirect : System.Web.UI.Page
 {
     private string name;

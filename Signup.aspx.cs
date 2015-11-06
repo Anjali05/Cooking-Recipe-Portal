@@ -8,6 +8,10 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Web.Configuration;
 
+/*
+* @author Anjali
+*/
+
 public partial class Signup : System.Web.UI.Page
 {
     string connectionStr;
