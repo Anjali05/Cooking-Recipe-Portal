@@ -12,23 +12,10 @@ public partial class Homepage : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        if((PreviousPage != null && PreviousPage.IsCrossPagePostBack))
+        if (Session["theme"] == null)
         {
-          /* LoginRedirect l = PreviousPage as LoginRedirect;
-            if(l != null)
-            {
-                welcome.Text = l.Name;
-            }
-            else
-            {
-                welcome.Text = "";
-            }*/
-            Label l = (Label)PreviousPage.FindControl("loginResponse");
-            welcome.Text = l.Text;
-        }
-        else
-        {
-            welcome.Text = "";
+            Session["theme"] = "White";
+            return;
         }
     }
 
@@ -67,13 +54,26 @@ public partial class Homepage : System.Web.UI.Page
 
     protected void post_Click(object sender, ImageClickEventArgs e)
     {
-        if(welcome.Text.Contains("Welcome"))
-        {
-            Response.Redirect("PostRecipe.aspx");
-        }
-        else
-        {
             Response.Redirect("Login.aspx");
+    }
+
+    protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        DropDownList dl = (DropDownList)sender;
+        switch (dl.SelectedValue)
+        {
+            case "White": Session["theme"] = "White"; Response.Redirect(Request.RawUrl); break;
+            case "Dark": Session["theme"] = "Dark"; Response.Redirect(Request.RawUrl); break;
+            default: Session["theme"] = "White"; Response.Redirect(Request.RawUrl); break;
         }
+    }
+
+    protected void Page_PreInit(object sender, EventArgs e)
+    {
+        if (Session["theme"] == null)
+        {
+            Session["theme"] = "White";
+        }
+        Page.Theme = (string)Session["theme"];
     }
 }

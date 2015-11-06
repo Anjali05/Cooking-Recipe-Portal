@@ -23,35 +23,35 @@
                 </asp:View>
                 <asp:View ID="tip2" runat="server">
                     <asp:Image ID="img2" src="Images/Tips/tip2.jpg" runat="server" Width="50%" Height="50%"></asp:Image>
-                    <asp:Button ID ="B2" align="centre" Text="Next Tip" class="btn btn-primary" runat="server" CommandName="SwitchViewByid" CommandArgument="tip3"/>
+                    <asp:Button ID ="B2" align="centre" Text="Next Tip" class="btn btn-primary" runat="server" CommandName="SwitchViewByID" CommandArgument="tip3"/>
                 </asp:View>
                 <asp:View ID="tip3" runat="server">
                      <asp:Image ID="Img3" src="Images/Tips/tip3.jpg" runat="server" Width="50%" Height="50%"></asp:Image>
-                    <asp:Button ID ="B3" align="centre" Text="Next Tip" class="btn btn-primary" runat="server" CommandName="SwitchViewByIndex" CommandArgument="tip4"/>
+                    <asp:Button ID ="B3" align="centre" Text="Next Tip" class="btn btn-primary" runat="server" CommandName="SwitchViewByID" CommandArgument="tip4"/>
                 </asp:View>
                 <asp:View ID="tip4" runat="server">
                      <asp:Image ID="Img4" src="Images/Tips/tip4.jpg" runat="server" Width="50%" Height="50%"></asp:Image>
-                    <asp:Button ID ="B4" align="centre" Text="Next Tip" class="btn btn-primary" runat="server" CommandName="SwitchViewByid" CommandArgument="tip5"/>
+                    <asp:Button ID ="B4" align="centre" Text="Next Tip" class="btn btn-primary" runat="server" CommandName="SwitchViewByID" CommandArgument="tip5"/>
                 </asp:View>
                 <asp:View ID="tip5" runat="server">
                      <asp:Image ID="Img5" src="Images/Tips/tip6.jpg" runat="server" Width="50%" Height="50%"></asp:Image>
-                    <asp:Button ID ="B5" align="centre" Text="Next Tip" class="btn btn-primary" runat="server" CommandName="SwitchViewByid" CommandArgument="tip6"/>
+                    <asp:Button ID ="B5" align="centre" Text="Next Tip" class="btn btn-primary" runat="server" CommandName="SwitchViewByID" CommandArgument="tip6"/>
                 </asp:View>
                 <asp:View ID="tip6" runat="server">
                      <asp:Image ID="Img6" src="Images/Tips/tip7.jpg" runat="server" Width="50%" Height="50%"></asp:Image>
-                    <asp:Button ID ="B6" align="centre" Text="Next Tip" class="btn btn-primary" runat="server" CommandName="SwitchViewByid" CommandArgument="tip7"/>
+                    <asp:Button ID ="B6" align="centre" Text="Next Tip" class="btn btn-primary" runat="server" CommandName="SwitchViewByID" CommandArgument="tip7"/>
                 </asp:View>
                 <asp:View ID="tip7" runat="server">
                      <asp:Image ID="Img7" src="Images/Tips/tip8.jpg" runat="server" Width="50%" Height="50%"></asp:Image>
-                    <asp:Button ID ="B7" align="centre" Text="Next Tip" class="btn btn-primary" runat="server" CommandName="SwitchViewByid" CommandArgument="tip8" />
+                    <asp:Button ID ="B7" align="centre" Text="Next Tip" class="btn btn-primary" runat="server" CommandName="SwitchViewByID" CommandArgument="tip8" />
                 </asp:View>
                 <asp:View ID="tip8" runat="server">
                      <asp:Image ID="Img8" src="Images/Tips/tip9.jpg" runat="server" Width="50%" Height="50%"></asp:Image>
-                    <asp:Button ID ="B8" align="centre" Text="Next Tip" class="btn btn-primary" runat="server" CommandName="SwitchViewByid" CommandArgument="tip9"/>
+                    <asp:Button ID ="B8" align="centre" Text="Next Tip" class="btn btn-primary" runat="server" CommandName="SwitchViewByID" CommandArgument="tip9"/>
                 </asp:View>
                 <asp:View ID="tip9" runat="server">
                      <asp:Image ID="Img9" src="Images/Tips/tip10.jpg" runat="server" Width="50%" Height="50%"></asp:Image>
-                    <asp:Button ID ="B9" align="centre" Text="Next Tip" class="btn btn-primary" runat="server" CommandName="SwitchViewByid" CommandArgument="tip10" />
+                    <asp:Button ID ="B9" align="centre" Text="Next Tip" class="btn btn-primary" runat="server" CommandName="SwitchViewByID" CommandArgument="tip10" />
                 </asp:View>
                 <asp:View ID="tip10" runat="server">
                      <asp:Image ID="Img10" src="Images/Tips/tip11.jpg" runat="server" Width="50%" Height="50%"></asp:Image>

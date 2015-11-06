@@ -25,4 +25,13 @@
     <imageurl>http://www.ndtv.com/cooks/images/walnutsalad.jpg</imageurl>
     <date>11/5/2015</date>
   </Recipe>
+  <Recipe>
+    <name>Cheese Onion Omelette</name>
+    <type>Breakfast</type>
+    <ingredients>2 tsp oil/ butter, 1 egg, 1/2 onion, chopped fine, Parlsey, Parmesan cheese, grate</ingredients>
+    <method>Heat some butter in a pan. You can use oil too.  Add some onions and let them caramelize (turn brownish). Whisk the egg in another bowl. Do not over beat the egg. Last thing you want is the egg to be fluffing up because the omelette has to be thin and for that it should not be over beaten. Add some salt, cheese and herbs to it. Normally you just fold  the egg with the fillings of your choice but here the cheese and herbs are added to the egg batter itself. Now in another pan heat some butter/oil. It should be of a good amount otherwise the egg will stick to the pan. Pour the egg mix and spread it evenly. Add the caramelized onions to it. Top the with some more cheese.  Fold one half of the egg over other and serve.
+</method>
+    <imageurl>http://www.ndtv.com/cooks/images/cheese-onion-omelette_med.jpg</imageurl>
+    <date>11/5/2015</date>
+  </Recipe>
 </Recipes>

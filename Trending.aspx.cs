@@ -14,7 +14,7 @@ public partial class Trending : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         string date = cal.TodaysDate.ToShortDateString();
-        today.Text = "Today is " + cal.TodaysDate.ToLongDateString();
+        today.Text = "Trending today";
         if(!this.IsPostBack)
         {
             search(date);
@@ -25,9 +25,12 @@ public partial class Trending : System.Web.UI.Page
     protected void cal_SelectionChanged(object sender, EventArgs e)
     {
         string date = cal.SelectedDate.ToShortDateString();
+        
         if(date!=null)
         {
+            
             search(date);
+            today.Text = "Trending on " + cal.SelectedDate.ToLongDateString();
         }
         else
         {
@@ -46,10 +49,13 @@ public partial class Trending : System.Web.UI.Page
             Label lbl = new Label();
             lbl.Text = "<br/>"+name;
             e.Cell.Controls.Add(lbl);
-            e.Day.IsSelectable = false;
-        
         }
-       
+
+        if (e.Day.Date > DateTime.Today)
+        {
+
+            e.Day.IsSelectable = false;
+        }
     }
 
     public void search(string date)

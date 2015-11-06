@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Homepage.aspx.cs" Inherits="Homepage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Homepage.aspx.cs" Inherits="Homepage" StylesheetTheme="White"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     
@@ -10,7 +10,13 @@
          <br />
          <br />
 
-         <h2><asp:label runat="server" ID="welcome" Text="" text-align="center"></asp:label></h2>
+        <div class="nav navbar-nav navbar-right">
+                <asp:DropDownList ID="DropDownList1" cssClass="form-control marginate" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" >
+                    <asp:ListItem>Select Theme</asp:ListItem>
+                    <asp:ListItem>White</asp:ListItem>
+                    <asp:ListItem>Dark</asp:ListItem>
+                </asp:DropDownList>
+            </div>
        <div class="container">
 	      <div class="row">
 		    <h2>Search Recipe</h2>
@@ -44,7 +50,7 @@
             <div class="panel panel-info">
               <div class="panel-heading">Food Blog</div>
               <div class="panel-body">
-                 <asp:ImageButton ID="blog" src="Images/foodblog1.jpg" width="100%" runat="server" />
+                 <asp:ImageButton ID="blog" src="Images/foodblog1.jpg" width="100%" runat="server" PostBackUrl="http://www.wordpress.com"/>
               </div>
             </div>
         </div>
